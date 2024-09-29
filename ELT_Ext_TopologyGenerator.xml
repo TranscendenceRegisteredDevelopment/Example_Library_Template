@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+
+<!--
+#########################
+###      HEADER       ###
+#########################
+-->
+
+
+	<!-- Topology Creator-->
+	<SystemMap UNID="&ELT_unidTopology;"
+		displayOn="&smHumanSpace;"
+		>
+
+		<Uses unid="&ELT_unidUngovernedExtension;"/>
+
+		<TopologyCreator>
+			<Node ID="ELT_UngovernedExtension"/>
+		</TopologyCreator>
+	</SystemMap>
+
+</TranscendenceModule>

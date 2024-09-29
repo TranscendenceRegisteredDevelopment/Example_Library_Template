@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+
+<!--
+#########################
+###      HEADER       ###
+#########################
+-->
+
+	<!-- Define our topology -->
+	<SystemMap UNID="&ELT_unidUngovernedExtension;"
+			displayOn="&smHumanSpace;"
+			>
+
+		<NodeGroup ID="ELT_UngovernedExtension">
+			<!-- connections between our own systems -->
+			<Stargate from="ELT_A1:edgeward"	to="ELT_A2:coreward"/>
+			<!-- connect to mainline topology here -->
+			<Stargate from="ELT_A1:coreward"	to="C5A:stubward"/>
+		</NodeGroup>
+
+		<Node ID="ELT_A1" x="222" y="110">
+			<System 
+				name=			"Ealty"
+				level=			"4"
+				attributes=		"humanSpace, mainline, ungoverned, ELT, ELT_bigCorpSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+
+		<Node ID="ELT_A2" x="190" y="145">
+			<System 
+				name=			"E'Modie"
+				level=			"5"
+				attributes=		"humanSpace, mainline, ungoverned, ELT, ELT_bigCorpSpace, ELT_bigCorpHQ"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+	</SystemMap>
+</TranscendenceModule>

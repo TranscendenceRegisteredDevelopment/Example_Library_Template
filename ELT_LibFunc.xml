@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE TranscendenceLibrary
+	[
+	<!ENTITY ELT_unidELTFunctionLibrary					"0xEFFE0002">
+	
+	<!-- LIB COVER 0FFF -->
+	
+	<!ENTITY ELT_rsELTLibCover						"0xEFFE0FFF">
+	
+	<!-- EXTERNAL -->
+	<!ENTITY ELT_unidELTUNIDLibrary						"0xEFFE0000">
+]>
+
+<TranscendenceLibrary
+	name="Transcendence: Expansion Library Template - Function Library"
+	credits="Development by:; Arisaya;"
+	UNID="&ELT_unidELTFunctionLibrary;"
+	release="1"
+	version="1.0.0.0"
+	coverImageID=	"&ELT_rsELTLibCover;"
+	apiVersion="53">
+	<Image UNID="&ELT_rsELTLibCover;"	bitmap="resources/images/covers/ELTCoverLibrary.png"/>
+
+<!-- LIBRARIES -->
+	
+	<Library unid="&ELT_unidELTUNIDLibrary;"/>
+	
+<!-- MODULES -->
+
+	<Modules>
+		<!-- This does nothing - It is only a template -->
+		<Module filename="ELT_BlankModule.xml"/>
+	</Modules>
+	
+<!-- GLOBALS -->
+
+	<Global>
+		(block Nil)
+	</Global>
+	
+</TranscendenceLibrary>

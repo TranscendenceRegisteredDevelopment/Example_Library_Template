@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE TranscendenceLibrary
+	[
+	<!ENTITY ELT_unidELTUNIDLibrary						"0xEFFE0000">
+	
+	<!-- LIB COVER 0FFF -->
+	
+	<!ENTITY ELT_rsELTLibCover						    "0xEFFE0FFF">
+
+<!-- Images 1000-2FFF -->
+
+	<!-- EXAMPLE FACTION *000-*01F-->
+	
+	<!-- GENERIC CIVILIAN *E00-*EFF -->
+	
+	<!-- SPACE & MISC *F00-*FFF -->
+
+<!-- Sounds 3000-3FFF-->
+
+<!-- Objects and Dockscreens 6000-7FFF -->
+
+	<!-- EXAMPLE FACTION *000-*01F-->
+
+	<!-- GENERIC CIVILIAN *E00-*EFF -->
+	
+	<!-- SPACE & MISC *F00-*FFF -->
+
+<!-- Items 8000-9FFF -->
+
+	<!-- EXAMPLE FACTION *000-*01F-->
+
+	<!-- GENERIC CIVILIAN *E00-*EFF -->
+	
+	<!-- SPACE & MISC *F00-*FFF -->
+
+<!-- Systems & Topology D000 - DFFF -->
+
+	<!-- Systems D000-D7FF -->
+
+		<!-- Static System Types D000-D1FF-->
+	
+		<!-- Random System Types D200-D2FF-->
+		
+	<!-- Topology D800-D9FF -->
+
+		<!-- Core ELT Topology Branches -->
+	<!ENTITY ELT_unidUngovernedExtension					"0xEFFED800">
+	
+		<!-- High probability branches -->
+		
+		<!-- Med probability branches -->
+		
+		<!-- Low probability branches -->
+		
+		<!-- Very low probability branches -->
+
+		<!-- Topology Processors -->
+	<!ENTITY ELT_unidTopology					            "0xEFFED9FF">
+
+	<!-- System Parts Tables DA00-DFFF -->
+
+<!-- Effects and Stuff E000-EFFF -->
+
+	<!-- Projectiles and stuff E000-E3FF -->
+	
+	<!-- Engines E400-E4FF -->
+	
+	<!-- onHit and damage and onFire E700-E9FF -->
+	
+	<!-- Misc EE00-EFFF -->
+	
+
+<!-- MISC F000-FFFF -->
+	
+	<!-- Sovereigns F000-F0FF -->
+	
+	<!-- Misc Dockscreens F100-F2FF -->
+	
+	<!-- MISSIONS F300-F4FF -->
+	
+	<!-- MISC TYPES FF00-FFFF -->
+	
+	<!ENTITY ELT_ecExposureEconomy						"0xEFFEFF00">
+	
+	<!ENTITY ELT_vvMiscAttributes						"0xEFFEFFFF">
+	
+]>
+<TranscendenceLibrary
+	name="Transcendence: Expansion Library Template - UNID Library"
+	credits="Development by:; Arisaya;"
+	UNID="&ELT_unidELTUNIDLibrary;"
+	release="1"
+	version="1.0.0.0"
+	coverImageID=	"&ELT_rsELTLibCover;"
+	apiVersion="53">
+	<Image UNID="&ELT_rsELTLibCover;"	bitmap="resources/images/covers/ELTCoverLibrary.png"/>
+</TranscendenceLibrary>

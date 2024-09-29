@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE TranscendenceExtension
+	[
+	<!ENTITY ELT_unidExtension					    "0xEFFE000F">
+	
+	<!-- LIB COVER 0FFF -->
+	
+    <!ENTITY ELT_rsELTExtCover						"0xEFFE0FFE">
+
+	<!-- Libraries -->
+	<!ENTITY ELT_unidELTUNIDLibrary			        "0xEFFE0000">
+	<!ENTITY ELT_unidELTResourceLibrary				"0xEFFE0001">
+	<!ENTITY ELT_unidELTFunctionLibrary				"0xEFFE0002">
+	<!ENTITY ELT_unidELTLibrary					    "0xEFFE0003">
+
+]>
+
+<TranscendenceExtension
+	name="Example Library Template - Extension"
+	credits="Arisaya"
+	UNID="&ELT_unidExtension;"
+	release="1"
+	version="1.0.0.0"
+	coverImageID=	"&ELT_rsELTExtCover;"
+	apiVersion="53">
+	<Image UNID="&ELT_rsELTExtCover;"	bitmap="resources/images/covers/ELTCoverExtension.png"/>
+	
+	<!-- Library to use -->
+	<Library unid="&ELT_unidELTUNIDLibrary;"/>
+	<Library unid="&ELT_unidELTResourceLibrary;"/>
+	<Library unid="&ELT_unidELTFunctionLibrary;"/>
+	<Library unid="&ELT_unidELTLibrary;"/>
+	<Library unid="&unidCoreTypesLibrary;"/>
+	<Library unid="&unidRPGLibrary;"/>
+	<Library unid="&unidGalaxyLibrary;"/>
+	<Library unid="&unidHumanSpaceLibrary;"/>
+	
+	<!-- Modules -->
+
+	<Module filename="ELT_Ext_TopologyGenerator.xml"/>
+
+</TranscendenceExtension>

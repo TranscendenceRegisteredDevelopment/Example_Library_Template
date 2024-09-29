@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE TranscendenceLibrary
+	[
+	<!ENTITY ELT_unidELTLibrary						"0xEFFE0003">
+	
+	<!-- LIB COVER 0FFF -->
+	
+	<!ENTITY ELT_rsELTLibCover						"0xEFFE0FFF">
+	
+	<!-- EXTERNAL -->
+	<!ENTITY ELT_unidELTUNIDLibrary						"0xEFFE0000">
+	<!ENTITY ELT_unidELTResourceLibrary					"0xEFFE0001">
+	<!ENTITY ELT_unidELTFunctionLibrary					"0xEFFE0002">
+]>
+
+<TranscendenceLibrary
+	name="Transcendence: Expansion Library Template - Library"
+	credits="Development by:; Arisaya;"
+	UNID="&ELT_unidELTLibrary;"
+	release="1"
+	version="1.0.0.0"
+	coverImageID=	"&ELT_rsELTLibCover;"
+	apiVersion="53">
+	<Image UNID="&ELT_rsELTLibCover;"	bitmap="resources/images/covers/ELTCoverLibrary.png"/>
+
+<!-- LIBRARIES -->
+	
+	<Library unid="&ELT_unidELTUNIDLibrary;"/>
+	<Library unid="&ELT_unidELTResourceLibrary;"/>
+	<Library unid="&ELT_unidELTFunctionLibrary;"/>
+	<Library unid="&unidCoreTypesLibrary;"/>
+	<Library unid="&unidRPGLibrary;"/>
+	<Library unid="&unidGalaxyLibrary;"/>
+	<Library unid="&unidHumanSpaceLibrary;"/>
+
+<!-- MODULES -->
+
+	<Modules>
+		<Module filename="ELT_Dockscreens.xml"/>
+		<Module filename="ELT_Effects.xml"/>
+		<Module filename="ELT_EngineEffects.xml"/>
+		<Module filename="ELT_Encounters_Factional.xml"/>
+		<Module filename="ELT_Encounters_Generic.xml"/>
+		<Module filename="ELT_Environments.xml"/>
+		<Module filename="ELT_Explosions.xml"/>
+		<Module filename="ELT_Items_Factional.xml"/>
+		<Module filename="ELT_Items_Generic.xml"/>
+		<Module filename="ELT_Missions_Generic.xml"/>
+		<Module filename="ELT_Overrides.xml"/>
+		<Module filename="ELT_Ships_Factional.xml"/>
+		<Module filename="ELT_Ships_Generic.xml"/>
+		<Module filename="ELT_Ships_Player.xml"/>
+		<Module filename="ELT_Sovereigns.xml"/>
+		<Module filename="ELT_Systems.xml"/>
+		<Module filename="ELT_System_Morphologies.xml"/>
+		<Module filename="ELT_Topology.xml"/>
+		<!-- This does nothing - It is only a template -->
+		<Module filename="ELT_BlankModule.xml"/>
+	</Modules>
+	
+<!-- TYPES -->
+
+<!--
+#########################
+###     Attributes    ###
+#########################
+-->
+	<Type UNID="&ELT_vvMiscAttributes;">
+		<DisplayAttributes>
+			<!-- Manufacturer -->
+			<ItemAttribute label="BigCorp"         		criteria="* +elt_bigCorp;"/>
+			
+			<!-- Function -->
+			<ItemAttribute label="Made by Interns"         	criteria="* +elt_mfgInterns;"	labelType="disadvantage"/>
+			<!-- Etc -->
+		</DisplayAttributes>
+	</Type>
+
+<!--
+#########################
+###      Economy      ###
+#########################
+-->
+
+	<EconomyType UNID="&ELT_ecExposureEconomy;"
+		id=				"elt_exposure" 
+		currency=		"exposure"
+		conversion=		"0.0001"
+		/>
+
+</TranscendenceLibrary>
