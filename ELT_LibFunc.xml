@@ -35,8 +35,8 @@
 	
 <!-- GLOBALS -->
 
-	<Global>
+	<Globals>
 		(block Nil)
-	</Global>
+	</Globals>
 	
 </TranscendenceLibrary>
